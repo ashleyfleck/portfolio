@@ -67,12 +67,12 @@ img {max-width: 100%;
 .container p {
 	margin: 0;
 }
-/*.rotate-180 {
+.rotate-180 {
 transform: rotate(180deg);
 }
 .rotate-90 {
 transform: rotate(90deg);
-}*/
+}
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -99,9 +99,26 @@ transform: rotate(90deg);
 }
     /**Desktop*/
 @media only screen and (min-width: 768px) {
-#img{
-   width: 40em;
-   height: 30em;
+ header {
+   display: inline-block;
+   width: 100%;
+ }
+ #img{
+    width: 40em;
+    height: 30em;
+  }
+ h1{
+   width: 60%;
+ }
+ .nav {
+   width: 35%;
+   text-align: right;
+ }
+ .nav ul li {
+     display: inline-block;
+ }
+ .nav ul {
+   width: 100%;
  }
 }
 
@@ -112,11 +129,8 @@ transform: rotate(90deg);
    height: 30em;
  }
 }
-/*h1{
+h1{
   width: 100%;
-}
-.nav {
-    width: 20%;
 }
 .nav ul li {
     display: inline-block;
@@ -125,5 +139,5 @@ transform: rotate(90deg);
   width: 100%;
 }
 }
-*/
+
 
