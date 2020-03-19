@@ -1,0 +1,129 @@
+.title, .nav, .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title {
+    color: #221e1d;
+    text-align: center;
+    text-shadow: 2px 2px #A9A9A9;
+}
+
+.nav {
+    width: 100%;
+    text-align: center;
+    background-color: #fbf9f4;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: block;
+    margin: 3px;
+}
+
+.nav ul li a {
+    display: block;
+    color: #373D3F;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav ul li a:hover {
+    color: #e85a4f;
+    font-weight: bold;
+}
+
+#current-page {
+    font-weight: bold;
+}
+
+body {background-color: #fbf9f4;}
+
+img {max-width: 100%;
+}
+.parallax {
+  /* The image used */
+  background-image: url("../img/flowers-at-market.jpg");
+  transform: rotate(180deg);
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+	display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.container p {
+	margin: 0;
+}
+/*.rotate-180 {
+transform: rotate(180deg);
+}
+.rotate-90 {
+transform: rotate(90deg);
+}*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flex-container img {
+  width: 200px;
+}
+#img{
+   width: 20em;
+   height: auto;
+   border: 10px solid black;
+   margin:0 auto;
+   background-size: 100%;
+}
+.preview{
+   width:10%;
+   border: 10px solid black;
+   filter: grayscale(100%);
+}
+.preview:hover{
+  border: 5px solid gray;
+}
+    /**Desktop*/
+@media only screen and (min-width: 768px) {
+#img{
+   width: 40em;
+   height: 30em;
+ }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+#img{
+   width: 40em;
+   height: 30em;
+ }
+}
+/*h1{
+  width: 100%;
+}
+.nav {
+    width: 20%;
+}
+.nav ul li {
+    display: inline-block;
+}
+.nav ul {
+  width: 100%;
+}
+}
+*/
+
